@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+body{
+  background-color: #CCF33E;
+  overflow-x: hidden;
+}
+
+
+/* Custom ScrollBar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f0f0f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer !important;
+  margin-right:10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #CCF33E;
+  border:2px solid #3a3a3a;
+  cursor: default !important;
+}
+/* Custom ScrollBar Ends */
