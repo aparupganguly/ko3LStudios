@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Navbar from "../Components/Navbar";
-
+import Services from "./Services";
 import ShowReelDemo from "../res/showreelDemo.png";
 
 import "../Styles/Landing.css";
@@ -41,6 +41,20 @@ const LandingPage = () => {
 
         <div className="HeroContainer">
           <p className="herotitle">Your Personal 3D Commercial Studio</p>
+          <p
+            style={{
+              fontFamily: "General Sans",
+              position: "absolute",
+              top: "12%",
+              fontSize: "2vw",
+              fontWeight: "500",
+              color: "#1e1e1e",
+            }}
+            className="ko3LText"
+          >
+            Ko3DL Studios
+          </p>
+
           <Spline
             style={{
               scale: "0.7 ",
@@ -48,7 +62,8 @@ const LandingPage = () => {
               position: "absolute",
               top: "-260px",
               right: "-150px",
-              width:"55%",
+              width: "55%",
+              zIndex: -1,
             }}
             scene="https://prod.spline.design/EXgiWlLYnrgxbyuw/scene.splinecode"
           />
@@ -59,6 +74,7 @@ const LandingPage = () => {
       <div className="ShowReelContainer">
         <img className="showReel" src={ShowReelDemo} alt="" />
       </div>
+      <Services></Services>
     </>
   );
 };
